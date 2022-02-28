@@ -38,9 +38,6 @@
         function right($screen){
             return ("<div class='righttminc'>{$screen}</div>");
         }
-        function close(){
-            echo "</body></html>";
-        }
         function p($props, $val){
             $attr = "";
             foreach($props as $att => $attval){
