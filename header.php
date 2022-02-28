@@ -1,5 +1,6 @@
 <?php
         include_once('./string.php');
+        include_once('functions.php');
         function center($element){
             return ("<center>{$element}</center>");
         }
@@ -65,12 +66,6 @@
                 $arr['value'] = "";
             }
             return("<textarea {$props}>{$arr['value']}</textarea>");
-        }
-        function end_doc($arr){
-            foreach ($arr as $each){
-                echo "<script src='".$each."'></script>";
-            }
-            echo "</body></html>";
         }
         function form($array){
             if (isset($array['method'])){
